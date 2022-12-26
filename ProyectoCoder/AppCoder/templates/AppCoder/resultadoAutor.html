@@ -1,0 +1,17 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+ Nombre Autor:{{nombre_autor}}
+<br>
+Nacionalidad Autor:
+{%for autor in autors%}
+    {{autor.nacionalidad_autor}}
+    <br>
+{%endfor%}
+<br> 
+<a href="{%url 'Listautor'%}">Regresar</a>
+{% endblock %}

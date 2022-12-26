@@ -1,0 +1,14 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<form method="post">{% csrf_token %}
+    ¿Estás seguro que deseas borrar el autor{{ object.titulo }}"?
+    <br>
+    <input type="submit" value="Eliminar"/>
+    <br>
+<a href="{%url 'Listautor'%}">Regresar</a>
+
+{% endblock %}

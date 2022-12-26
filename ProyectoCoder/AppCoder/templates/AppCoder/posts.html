@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1><center>Posts</center></h1>
+    
+    <p>
+        <a class="navbar-brand" href="{% url 'List' %}">_Listado de Posts</a>
+        <br>
+        <a class="navbar-brand" href="{% url 'New' %}">_Crear Post</a>
+        <br>
+        <a class="navbar-brand" href="{% url 'buscarpost' %}">_Buscar Post</a>
+
+    </p>
+
+  
+
+{% endblock %}

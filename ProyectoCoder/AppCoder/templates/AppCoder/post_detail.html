@@ -1,0 +1,14 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+Titulo:{{post.titulo}}<br>
+Contenido del Post:{{post.contenido}}<br>
+
+<a href="{%url 'List'%}">Regresar</a>
+
+{% endblock %}
+  
+

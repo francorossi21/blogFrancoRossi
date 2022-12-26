@@ -1,0 +1,19 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<ul>{% for autor in object_list %}
+    <p>{{autor.nombre_autor}}</p>
+    <p>
+        <a href="{% url 'Detailautor' autor.id %}">Ver</a>
+        <a href="{% url 'Editautor' autor.id %}">Editar</a>
+        <a href="{% url 'Deleteautor' autor.id %}">Borrar</a>
+    </p>
+    {% endfor %}
+</ul>
+
+{% endblock %}
+  
+

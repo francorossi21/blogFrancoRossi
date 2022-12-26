@@ -1,0 +1,22 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1><center>Autores</center></h1>
+    
+    <p>
+        <a class="navbar-brand" href="{% url 'Listautor' %}">_Listado de Autores</a>
+        <br>
+        <a class="navbar-brand" href="{% url 'Newautor' %}">_Crear Autor</a>
+        <br>
+        <a class="navbar-brand" href="{% url 'buscarautor' %}">_Buscar Autor</a>
+
+    </p>
+
+  
+
+{% endblock %}

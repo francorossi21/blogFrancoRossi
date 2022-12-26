@@ -1,0 +1,21 @@
+{% extends "AppCoder/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1><center>Categorias</center></h1>
+    
+    <p>
+        <a class="navbar-brand" href="{% url 'Listcategoria' %}">_Listado de Categorias</a>
+        <br>
+        <a class="navbar-brand" href="{% url 'Newcategoria' %}">_Crear Categoria</a>
+        <br>
+        <a class="navbar-brand" href="{% url 'buscarcategoria' %}">_Buscar Categoria</a>
+    </p>
+
+  
+
+{% endblock %}
